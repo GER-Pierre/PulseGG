@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #050505;                    /* background                                   */
+    --section-color: #0D0D12;               /* sections, backgrounds                        */
+    --card-color: #14141B;                  /* cards, boxes, containers                     */
+    --border-color: #1F1F2E;                /* seperators, borders                          */
+    --secondary-font-color: #A1A1AA;        /* secondary text, icons(inactive)              */
+    --font-color: #FFFFFF;                  /* headlines, important texts                   */
+
+    --background-linear: linear-gradient(90deg,rgba(139, 92, 246, 1) 0%, rgba(0, 212, 255, 1) 100%); /* background, hero sections, linears gradients, buttons   */
+    --hover-linear: linear-gradient(90deg,rgba(255, 46, 214, 1) 0%, rgba(139, 92, 246, 1) 100%);     /* hover-effects, accents, special highlights              */
+
+    --sucess-color: #39FF88;                /* positive actions, achievments, statistics    */
+    --warning-color: #FDD835;               /* warnings, tips                               */
+    --error-color: #FF4D4F;                 /* errors, critical actions                     */
+    --info-color: #00D4FF;                  /* informations, neutral tips                   */
+
+    --main-primary: #8B5CF6;                /* main color, accents, buttons, highlights     */
+    --electricblue-primary: #00D4FF;        /* secondary accents, links, icons              */
+    --hightlights-primary: #FF2ED6;         /* important highlights, hover effects          */
+    --postive-primary: #39FF88;             /* positive actions, achievments, statistics    */
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+header {
+    min-height: 15vh;
+}
+
+main {
+    min-height: 70vh;
+}
+
+footer {
+    min-height: 15vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--electricblue-primary);
+}
