@@ -31,18 +31,99 @@ html, body {
 }
 
 header {
-    min-height: 15vh;
+    min-height: 7.5vh;
+    background-color: var(--section-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section {
+    margin-right: 3%;
+}
+
+header a {
+    text-decoration: none;
+    padding-left: 2vh;
+    color: var(--secondary-font-color);
+}
+
+#btn-login {
+	box-shadow: 0px 0px 13px 0px var(--border-color);
+	background-color:transparent;
+	border-radius:7px;
+	border:1px solid var(--border-color);
+	display:inline-block;
+	cursor:pointer;
+	color: var(--secondary-font-color);
+	font-family:Arial;
+	font-size:14px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px var(--secondary-font-color);
+}
+
+#btn-login:hover {
+	background-color:transparent;
+}
+
+#btn-login:active {
+	position:relative;
+	top:1px;
+}
+
+#btn-signup {
+    margin-left: 1vh;
+	box-shadow: 0px 0px 13px 0px var(--border-color);
+	background-color: var(--main-primary);
+	border-radius:7px;
+	border:1px solid var(--border-color);
+	display:inline-block;
+	cursor:pointer;
+	color: var(--font-color);
+	font-family:Arial;
+	font-size:14px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px var(--font-color);
+}
+
+#btn-signup:hover {
+	background-color: transparent;
+}
+
+#btn-signup:active {
+	position: relative;
+	top: 1px;
 }
 
 main {
-    min-height: 70vh;
+    min-height: 77.5vh;
 }
 
 footer {
     min-height: 15vh;
+    background-color: var(--section-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+footer div {
+    text-align: center;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    grid-column: span 3 / span 3;
+    grid-row-start: 2;
+    color: var(--secondary-font-color)
 }
 
 footer a {
     text-decoration: none;
-    color: var(--electricblue-primary);
+    text-align: center;
 }
