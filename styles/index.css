@@ -48,7 +48,7 @@ header a {
     color: var(--secondary-font-color);
 }
 
-#btn-login {
+.btn-trans {
 	box-shadow: 0px 0px 13px 0px var(--border-color);
 	background-color:transparent;
 	border-radius:7px;
@@ -63,16 +63,16 @@ header a {
 	text-shadow:0px 1px 0px var(--secondary-font-color);
 }
 
-#btn-login:hover {
+.btn-trans:hover {
 	background-color:transparent;
 }
 
-#btn-login:active {
+.btn-trans:active {
 	position:relative;
 	top:1px;
 }
 
-#btn-signup {
+.btn-filled {
     margin-left: 1vh;
 	box-shadow: 0px 0px 13px 0px var(--border-color);
 	background-color: var(--main-primary);
@@ -88,17 +88,54 @@ header a {
 	text-shadow:0px 1px 0px var(--font-color);
 }
 
-#btn-signup:hover {
+.btn-filled:hover {
 	background-color: transparent;
 }
 
-#btn-signup:active {
+.btn-filled:active {
 	position: relative;
 	top: 1px;
 }
 
 main {
     min-height: 77.5vh;
+}
+
+.section {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.section img {
+    border-radius: 30px;
+}
+
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+
+    color: var(--font-color);
+    padding: 2%;
+}
+
+.feature-card {
+    border: 2px solid var(--border-color);
+    border-radius: 10%;
+    padding: 6%;
+    margin: 3px;
+}
+
+.feature-card p {
+    color: #ffffff50;
 }
 
 footer {
@@ -126,4 +163,15 @@ footer div {
 footer a {
     text-decoration: none;
     text-align: center;
+}
+
+h1 {
+    color: var(--font-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    color: var(--font-color);
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
